@@ -23,11 +23,11 @@ def main():
 
         writer.writerow(generateColumns())
 
-        printProgressBar(0, args.numRows, prefix = "Progress:", suffix = "Complete", length = args.numRows)
+        printProgressBar(0, args.numRows, prefix = "Progress:", suffix = "Complete", length = 50)
 
         for rowNum in range(args.numRows):
             writer.writerow(generateRow(rowNum))
-            printProgressBar(rowNum + 1, args.numRows, prefix = "Progress:", suffix = "Complete", length = args.numRows)
+            printProgressBar(rowNum + 1, args.numRows, prefix = "Progress:", suffix = "Complete", length = 50)
 
 def generateColumns():
     columns = []
@@ -57,7 +57,7 @@ def generateRow(rowNum):
 
     for col in range(numOfCols):
         if args.custWords:
-            row.append(random.sample(args.custWords, 1))
+            row.append(random.sample(args.custWords, 1)[0])
         elif args.useDictionary:
             word = randomWords.get_random_word()
             row.append(word if word != "None" else "-")
