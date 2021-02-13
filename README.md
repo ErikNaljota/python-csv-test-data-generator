@@ -57,7 +57,7 @@ $ python3 python-csv-test-data-generator.py -cd="|"
 | 4  | apple        | banana        | cherry        |
 
 ## License
-
+Built with ♥ by Erik Naljota under [MIT License](https://erik-naljota.mit-license.org/)
 
 ## Acknowledgements
 To make this script, I used RandomWord package by [vaibhavsingh97](https://github.com/vaibhavsingh97) on Github and an [answer](https://stackoverflow.com/a/34325723) by Greenstick on StackOverflow on a simple progress bar in Python.
